@@ -1,14 +1,14 @@
 package design.home.decorate;
 
-public class Decoration implements MyHomeImpl {
-    MyHomeImpl myHomeImpl;
+public class Decoration implements MyHomeInterface {
+    MyHomeInterface myHomeInterface;
 
-    public Decoration(MyHomeImpl myHomeImpl){
-        this.myHomeImpl =myHomeImpl;
+    public Decoration(MyHomeInterface myHomeInterface){
+        this.myHomeInterface = myHomeInterface;
     }
 
     @Override
     public void show() {
-        myHomeImpl.show();
+        myHomeInterface.show();
     }
 }

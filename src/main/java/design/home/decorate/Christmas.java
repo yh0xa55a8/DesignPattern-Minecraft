@@ -2,8 +2,8 @@ package design.home.decorate;
 
 public class Christmas extends Decoration {
 
-    public Christmas(MyHomeImpl myHomeImpl){
-        super(myHomeImpl);
+    public Christmas(MyHomeInterface myHomeInterface){
+        super(myHomeInterface);
     }
 
     @Override
@@ -14,6 +14,6 @@ public class Christmas extends Decoration {
 
 
     public void setDecoration(){
-        ((OriginalHome) super.myHomeImpl).setName("圣诞节气氛的家");
+        ((OriginalHome) super.myHomeInterface).setName("圣诞节气氛的家");
     }
 }

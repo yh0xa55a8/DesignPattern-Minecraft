@@ -6,11 +6,11 @@ import org.junit.Test;
 public class DecoratorTest {
     @Test
     public void test(){
-        MyHomeImpl home = new OriginalHome();
+        MyHomeInterface home = new OriginalHome();
         home.show();
-        MyHomeImpl home2 =new SpringFestival(home);
+        MyHomeInterface home2 =new SpringFestival(home);
         home2.show();
-        MyHomeImpl home1 =new Christmas(home);
+        MyHomeInterface home1 =new Christmas(home);
         home1.show();
         home1 =new SpringFestival(home);
         home.show();

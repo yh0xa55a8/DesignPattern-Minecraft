@@ -1,6 +1,6 @@
 package design.home.tile;
 
-public interface TileFlyweightImpl {
+public interface TileFlyweightInterface {
 
      void decorate(Tile tile);
 

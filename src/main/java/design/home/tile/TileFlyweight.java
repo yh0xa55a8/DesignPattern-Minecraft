@@ -1,6 +1,6 @@
 package design.home.tile;
 
-public class TileFlyweight implements TileFlyweightImpl {
+public class TileFlyweight implements TileFlyweightInterface {
 
 
 

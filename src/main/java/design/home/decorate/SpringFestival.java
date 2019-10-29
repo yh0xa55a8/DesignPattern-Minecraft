@@ -2,8 +2,8 @@ package design.home.decorate;
 
 public class SpringFestival extends Decoration {
 
-    public SpringFestival(MyHomeImpl myHomeImpl){
-        super(myHomeImpl);
+    public SpringFestival(MyHomeInterface myHomeInterface){
+        super(myHomeInterface);
     }
 
     @Override
@@ -14,6 +14,6 @@ public class SpringFestival extends Decoration {
 
 
     public void setDecoration(){
-        ((OriginalHome) super.myHomeImpl).setName("春节气氛的家");
+        ((OriginalHome) super.myHomeInterface).setName("春节气氛的家");
     }
 }

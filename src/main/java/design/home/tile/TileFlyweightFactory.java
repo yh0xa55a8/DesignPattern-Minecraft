@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 public class TileFlyweightFactory {
 
-    private HashMap<Property,TileFlyweightImpl> tiles=new HashMap<>();
+    private HashMap<Property, TileFlyweightInterface> tiles=new HashMap<>();
 
-    public TileFlyweightImpl getTile(Property property){
-        TileFlyweightImpl tileFlyweight = tiles.get(property);
+    public TileFlyweightInterface getTile(Property property){
+        TileFlyweightInterface tileFlyweight = tiles.get(property);
 
         if(tileFlyweight!=null){
             property.show();

@@ -1,6 +1,6 @@
 package design.home.decorate;
 
-public class OriginalHome extends MyHome implements MyHomeImpl {
+public class OriginalHome extends MyHome implements MyHomeInterface {
 
     public OriginalHome(){
         super("家");
