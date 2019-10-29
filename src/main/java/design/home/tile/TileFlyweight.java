@@ -13,6 +13,7 @@ public class TileFlyweight implements TileFlyweightImpl {
         System.out.println("地板");
     }
 
+    /** {@inheritDoc} */
     @Override
     public void decorate(Tile tile) {
         System.out.println("在位置("
@@ -23,6 +24,7 @@ public class TileFlyweight implements TileFlyweightImpl {
         );
     }
 
+    /** {@inheritDoc} */
     @Override
     public void show(Tile tile){
 
