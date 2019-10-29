@@ -15,7 +15,7 @@ public class App {
         System.out.println("*          1. 查看背包物品             *");
         System.out.println("*          9. 进入矿区                 *");
         System.out.println("*          9. 进入农场farm             *");
-        System.out.println("*          9. 一天过去了...            *");
+        System.out.println("*          6. 回家                    *");
         System.out.println("*          9. 一天过去了...            *");
         System.out.println("*          9. 一天过去了...            *");
         System.out.println("*          9. 一天过去了...            *");
