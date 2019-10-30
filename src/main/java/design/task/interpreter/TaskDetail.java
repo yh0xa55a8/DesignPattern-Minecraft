@@ -24,4 +24,17 @@ public class TaskDetail {
         }
     }
 
+    public String getTaskDetail(String info)
+    {
+        boolean ok= weatherDay.interpret(info);
+        if(ok){
+            return "今天是"+info+"，请领取你的任务！";
+        }
+        else{
+            return "今天是"+info+"，您今天没有任务。";
+        }
+    }
+
+
+
 }

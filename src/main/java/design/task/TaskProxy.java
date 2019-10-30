@@ -1,6 +1,8 @@
 package design.task;
 
 
+import design.task.observer.Daily;
+
 //proxy
 public class TaskProxy implements TaskInterface {
 
