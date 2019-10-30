@@ -33,7 +33,7 @@ public class FloorTiling {
                     }
                     if(floor_arr[floor_x][floor_y]==1){
                         System.out.println("("+floor_x+","+floor_y+")的位置已经有地板了。要新建一块地板覆盖它吗？(Y/N)");
-                        if(temp.next()=="N" || temp.next()=="n") {
+                        if(temp.next().equals("N")) {
                             break;
                         }
                     }
