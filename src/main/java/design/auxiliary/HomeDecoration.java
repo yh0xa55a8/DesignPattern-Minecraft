@@ -21,7 +21,7 @@ public class HomeDecoration {
         System.out.println("*            4. 恢复为原始状态               *");
         System.out.println("*            5. 退出               *");
         System.out.println("======================================");
-        DecorationHomeLoop:
+
         while(scanner1.hasNext()){
             switch(scanner1.next()){
                 case "1":

@@ -16,6 +16,10 @@ public class Caretaker {
 
     public Memento get(int index){
         return mementoList.get(index);
+
+    }
+    public int count(){
+        return mementoList.size();
     }
 
 }

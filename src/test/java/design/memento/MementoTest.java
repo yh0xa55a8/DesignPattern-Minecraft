@@ -10,6 +10,7 @@ public class MementoTest {
 
         Originator originator = new Originator();
         Caretaker caretaker = new Caretaker();
+        System.out.println((originator.getRecord()==null)?"Y":"N");
         originator.setRecord("State #1");
         originator.setRecord("State #2");
         caretaker.add(originator.createMemento());
