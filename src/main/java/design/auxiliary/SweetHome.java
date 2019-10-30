@@ -6,7 +6,7 @@ public class SweetHome {
     public void main(){
 
         FloorTiling floorTiling=new FloorTiling();
-
+        HomeDecoration homeDecoration=new HomeDecoration();
         Scanner scanner = new Scanner(System.in);
         System.out.println("======================================");
         System.out.println("=============你回到了家===============");
@@ -24,6 +24,7 @@ public class SweetHome {
                     break;
                 case "2":
                     System.out.println("装饰屋子");
+                    homeDecoration.operation();
                     break;
                 case "3":
                     System.out.println("查看留言版");
