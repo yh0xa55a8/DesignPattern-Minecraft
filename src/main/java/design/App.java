@@ -2,7 +2,7 @@ package design;
 
 
 import java.util.*;
-import design.mainAuxiliary.*;
+import design.auxiliary.*;
 
 public class App {
 

@@ -1,8 +1,6 @@
-package design.mainAuxiliary;
+package design.auxiliary;
 import design.home.tile.*;
-import design.mainAuxiliary.SweetHome;
-import design.App;
-import design.home.*;
+
 import java.util.*;
 public class FloorTiling {
     private static String[] color_set={"红色","橙色","黄色","绿色","蓝色","紫色","棕色","白色","黑色","粉色"};

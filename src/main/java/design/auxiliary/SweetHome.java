@@ -1,9 +1,7 @@
-package design.mainAuxiliary;
-
-import org.jaxen.function.FloorFunction;
+package design.auxiliary;
 
 import java.util.Scanner;
-import design.home.tile.*;
+
 public class SweetHome {
     public void main(){
 
