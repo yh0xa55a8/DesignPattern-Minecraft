@@ -1,4 +1,4 @@
-package design.mainAuxiliary;
+package design.auxiliary;
 
 import design.home.decorate.*;
 import design.home.tile.Property;
