@@ -1,9 +1,10 @@
 package design.home.tile;
+import java.util.*;
+import org.apache.commons.lang.ObjectUtils;
 
 public class TileFlyweight implements TileFlyweightInterface {
 
-
-
+    //只能用(临时创建的)property对象初始化
     private Property property;
 
     TileFlyweight(Property property) {
@@ -20,7 +21,7 @@ public class TileFlyweight implements TileFlyweightInterface {
                 + tile.getLocationX()+","+tile.getLocationY()+")"
                 +"铺上"
                 +property.getColor()+property.getTexture()
-                +"的"+tile.getMaterial()+"地板"
+                +(property.getColor().equals("")?"的":"")+tile.getMaterial()+"地板"
         );
     }
 
