@@ -1,12 +1,15 @@
 package design.auxiliary;
 
+import java.lang.management.MemoryManagerMXBean;
 import java.util.Scanner;
 
 public class SweetHome {
-    public void main(){
 
-        FloorTiling floorTiling=new FloorTiling();
-        HomeDecoration homeDecoration=new HomeDecoration();
+    FloorTiling floorTiling=new FloorTiling();
+    HomeDecoration homeDecoration=new HomeDecoration();
+    MemoBoard memoBoard = new MemoBoard();
+
+    public void main(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("======================================");
         System.out.println("=============你回到了家===============");
@@ -28,7 +31,7 @@ public class SweetHome {
                     break;
                 case "3":
                     System.out.println("查看留言版");
-                    //查看当前-以前
+                    memoBoard.operation();
                     break;
                 case "4":
                     System.out.println("退出");
