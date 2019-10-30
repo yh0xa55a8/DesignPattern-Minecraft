@@ -1,8 +1,6 @@
-package design.mainAuxiliary;
+package design.auxiliary;
 import design.home.tile.*;
-import design.mainAuxiliary.SweetHome;
-import design.App;
-import design.home.*;
+
 import java.util.*;
 public class FloorTiling {
     private static String[] color_set={"红色","橙色","黄色","绿色","蓝色","紫色","棕色","白色","黑色","粉色"};
@@ -35,7 +33,7 @@ public class FloorTiling {
                     }
                     if(floor_arr[floor_x][floor_y]==1){
                         System.out.println("("+floor_x+","+floor_y+")的位置已经有地板了。要新建一块地板覆盖它吗？(Y/N)");
-                        if(temp.next()=="N" || temp.next()=="n") {
+                        if(temp.next().equals("N")) {
                             break;
                         }
                     }
@@ -68,7 +66,9 @@ public class FloorTiling {
                     break;
                 case "4":
                     System.out.println("退出");
-                    break floorLoop;
+                    SweetHome sweetHome=new SweetHome();
+                    sweetHome.main();
+                    break;
             }
             System.out.println("======================================");
             System.out.println("=============请选择操作===============");
@@ -84,11 +84,7 @@ public class FloorTiling {
     public void initialize(){
         //初始化地板
 
-        for(int i=0;i<houseSize;i++){
-            for(int j=0;j<houseSize;j++){
-                floor_arr[i][j]=0;
-            }
-        }
+
 
         // System.out.println();
 

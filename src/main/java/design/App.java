@@ -2,11 +2,21 @@ package design;
 
 
 import java.util.*;
-import design.mainAuxiliary.*;
+import design.auxiliary.*;
 
 public class App {
 
     public static void main(String[] args) {
+
+        //@init
+        //请在下面写好每个模块必要的初始化函数
+        (new HomeInit()).main();
+
+        //到此为止
+        App.menu();
+
+    }
+    public static void menu(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("======================================");
         System.out.println("======= Welcome to Minecraft! ========");
@@ -22,11 +32,7 @@ public class App {
         System.out.println("======================================");
         System.out.println("请选择：");
 
-        //@init
-        //请在下面写好每个模块必要的初始化函数
-        (new HomeInit()).main();
 
-        //到此为止
         mainMenuLoop:
         while (scanner.hasNext()) {
             switch (scanner.next()) {
@@ -78,5 +84,4 @@ public class App {
 
         scanner.close();
     }
-
 }
