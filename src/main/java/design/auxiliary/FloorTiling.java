@@ -66,7 +66,9 @@ public class FloorTiling {
                     break;
                 case "4":
                     System.out.println("退出");
-                    break floorLoop;
+                    SweetHome sweetHome=new SweetHome();
+                    sweetHome.main();
+                    break;
             }
             System.out.println("======================================");
             System.out.println("=============请选择操作===============");
@@ -82,11 +84,7 @@ public class FloorTiling {
     public void initialize(){
         //初始化地板
 
-        for(int i=0;i<houseSize;i++){
-            for(int j=0;j<houseSize;j++){
-                floor_arr[i][j]=0;
-            }
-        }
+
 
         // System.out.println();
 

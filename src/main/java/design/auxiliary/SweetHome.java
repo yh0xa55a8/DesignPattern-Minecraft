@@ -3,10 +3,8 @@ package design.auxiliary;
 import java.util.Scanner;
 
 public class SweetHome {
-    public void main(){
 
-        FloorTiling floorTiling=new FloorTiling();
-        HomeDecoration homeDecoration=new HomeDecoration();
+    public void main(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("======================================");
         System.out.println("=============你回到了家===============");
@@ -20,11 +18,11 @@ public class SweetHome {
         while(scanner.hasNext()){
             switch(scanner.next()){
                 case "1":
-                    floorTiling.operation();
+                    HomeInit.floorTiling.operation();
                     break;
                 case "2":
                     System.out.println("装饰屋子");
-                    homeDecoration.operation();
+                    HomeInit.homeDecoration.operation();
                     break;
                 case "3":
                     System.out.println("查看留言版");

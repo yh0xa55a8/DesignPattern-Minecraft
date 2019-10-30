@@ -43,7 +43,9 @@ public class HomeDecoration {
                     break;
                 case "5":
                     System.out.println("退出");
-                    break DecorationHomeLoop;
+                    SweetHome sweetHome=new SweetHome();
+                    sweetHome.main();
+                    break ;
             }
             System.out.println("======================================");
             System.out.println("=============请选择操作===============");
