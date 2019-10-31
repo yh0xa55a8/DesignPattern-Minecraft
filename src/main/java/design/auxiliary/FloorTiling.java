@@ -3,14 +3,14 @@ import design.home.tile.*;
 
 import java.util.*;
 public class FloorTiling {
-    private static String[] colorSet ={"红色","橙色","黄色","绿色","蓝色","紫色","棕色","白色","黑色","粉色"};
-    private static String[] textureSet ={"横纹","波纹","光滑"};
-    private static String[] materialSet ={"桦木","松木","樟木","瓷砖"};
+    private static String[] color_set={"红色","橙色","黄色","绿色","蓝色","紫色","棕色","白色","黑色","粉色"};
+    private static String[] texture_set={"横纹","波纹","光滑"};
+    private static String[] material_set={"桦木","松木","樟木","瓷砖"};
     private static int houseSize=3;
     int[][] floor_arr = new int[houseSize][houseSize]; //默认初值0
     public void operation(){
         TileFlyweightFactory factory =new TileFlyweightFactory();//后面会用到
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         System.out.println("======================================");
         System.out.println("=============请选择操作===============");
         System.out.println("======================================");
@@ -20,8 +20,8 @@ public class FloorTiling {
         System.out.println("*              4. 退出               *");
         System.out.println("======================================");
         floorLoop:
-        while(scanner.hasNext()){
-            switch(scanner.next()){
+        while(scanner1.hasNext()){
+            switch(scanner1.next()){
                 case "1":
                     Scanner temp=new Scanner(System.in);
                     System.out.println("选择要铺设地板的坐标(当前房屋大小:"+houseSize+"*"+houseSize+",请输入0~"+houseSize+"间的值)");
@@ -42,7 +42,7 @@ public class FloorTiling {
                     System.out.println("桦木:0 松木:1 樟木:2 瓷砖:3");
                     int material=temp.nextInt();
 
-                    Tile curr_tile=new Tile(materialSet[material],floor_x,floor_y);
+                    Tile curr_tile=new Tile(material_set[material],floor_x,floor_y);
 
                     System.out.println("选择地板的颜色：");
                     System.out.println("红色:0 橙色:1 黄色:2 绿色:3 蓝色:4");
@@ -52,7 +52,7 @@ public class FloorTiling {
                     System.out.println("横纹:0 波纹:1 光滑:2");
                     int texture=temp.nextInt();
 
-                    Property new_property = new Property(textureSet[texture], colorSet[color]);
+                    Property new_property = new Property(texture_set[texture],color_set[color]);
                     TileFlyweightInterface flyweight =factory.getTile(new_property);
                     flyweight.decorate(curr_tile);
                     flyweight.show(curr_tile);
@@ -79,7 +79,7 @@ public class FloorTiling {
             System.out.println("*              4. 退出               *");
             System.out.println("======================================");
         }
-        scanner.close();
+        scanner1.close();
     }
     public void initialize(){
         //初始化地板
