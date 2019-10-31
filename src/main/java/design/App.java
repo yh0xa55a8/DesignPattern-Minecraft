@@ -5,7 +5,7 @@ import java.util.*;
 import design.auxiliary.*;
 
 public class App {
-
+//测试。。
     public static void main(String[] args) {
 
         //@init
