@@ -7,6 +7,8 @@ public class WeekObserver  extends Observer{
         this.daily.attach(this);
     }
 
+
+    //测试
     @Override
     public void show() {
         int week =daily.getState()%7;
